@@ -1,0 +1,115 @@
+#promo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #fff;
+}
+
+.promo__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.promo__trees {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  z-index: 2;
+}
+
+.promo__house {
+  position: absolute;
+  bottom: 15%;
+  left: 18%;
+  z-index: 3;
+}
+
+.promo__horse_little {
+  position: absolute;
+  z-index: 4;
+  left: 38%;
+  bottom: 18%;
+}
+
+.promo__birds {
+  max-width: 272px;
+  position: absolute;
+  z-index: 5;
+  right: 12%;
+  top: 17%;
+}
+
+.promo__horse_big {
+  position: absolute;
+  z-index: 6;
+  left: 48%;
+  bottom: 9%;
+}
+
+.promo__cloud {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  z-index: 7;
+  left: 0;
+  bottom: 9%;
+}
+
+.promo__bush_left {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  bottom: 4%;
+}
+
+.promo__bush_right {
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  bottom: 4%;
+}
+
+.promo__content {
+  position: relative;
+  z-index: 9;
+  display: flex;
+}
+
+.promo__offer {
+  margin-top: 150px;
+  max-width: 615px;
+}
+
+.promo__offer-title {
+  font-family: "Philosopher", serif;
+  font-size: 57px;
+  font-weight: 700;
+}
+
+.promo__offer-subtitle {
+  max-width: 480px;
+  display: flex;
+  column-gap: 10px;
+  color: #646464;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 24px;
+  line-height: 140%;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 1px;
+    background: #8F8F8F;
+    transform: translateY(0.95rem);
+  }
+}
+
+.promo__offer-btn {
+  margin-top: 34px;
+  width: 270px;
+}
