@@ -1,0 +1,36 @@
+#visitors {
+  margin-bottom: 100px;
+
+  .swiper-slide {
+    width: 100%;
+  }
+}
+
+.visitors__slider {
+  margin-top: 70px;
+}
+
+.visitors__gallery {
+  display: grid;
+  justify-content: center;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 470px));
+  grid-auto-flow: row;
+  width: 100%;
+
+  div {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 300px;
+    border-radius: 5px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      user-select: none;
+    }
+  }
+}

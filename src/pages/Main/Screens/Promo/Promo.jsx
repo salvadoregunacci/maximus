@@ -1,8 +1,9 @@
 import React, {useEffect, useRef} from "react"
-import Header from "../../../../components/Header.jsx";
 import "./styles.scss";
 import usePromoAnimation from "../../../../hooks/usePromoAnimation.js";
 import Button from "../../../../components/ui/Button.jsx";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 const Promo = () => {
     const $birdsImgRef = useRef(null);
@@ -14,6 +15,34 @@ const Promo = () => {
     const $promoSectionRef = useRef(null);
 
     usePromoAnimation($promoSectionRef, $birdsImgRef, $treesImgRef, $horseSmImgRef, $horseLgImgRef, $cloudImgRef, $bushImgRefs);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const tl = gsap.timeline();
+
+        tl
+            .to(".promo__bush_left",
+                {
+                    scrollTrigger: {
+                        scrub: 0.5
+                    },
+                    y: 400,
+                    ease: "power1.out"
+                }
+            )
+            .to(".promo__offer", {
+                scrollTrigger: {
+                    trigger: ".promo__offer",
+                    markers: true,
+                    scrub: 1,
+                    start: "top-=50px top"
+                },
+                x: "-100%",
+                scale: 0.2,
+                opacity: 0.2,
+            })
+    }, []);
 
     return (
         <section id="promo" ref={$promoSectionRef}>

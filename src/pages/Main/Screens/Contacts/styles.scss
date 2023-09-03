@@ -1,0 +1,44 @@
+#contacts {
+  margin-top: 150px;
+  height: 650px;
+  background: url("/images/pages/main/contacts/bg.webp") center center / 100% no-repeat;
+  position: relative;
+  overflow: hidden;
+
+  .contact_form {
+    position: relative;
+    z-index: 1;
+  }
+
+  .title_section {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .social-links {
+    margin-top: 30px;
+    justify-content: flex-end;
+  }
+
+  .contacts__bush {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(20%);
+  }
+
+  .contacts__bush_right {
+    right: 0;
+    z-index: 2;
+  }
+
+  .contacts__bush_left {
+    left: 0;
+    z-index: 2;
+  }
+}

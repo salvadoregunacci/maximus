@@ -1,0 +1,47 @@
+#reviews {
+  .details {
+    margin-top: 15px;
+  }
+
+  .details__body {
+    width: 100%;
+  }
+
+  .person_card {
+    margin-top: 30px;
+  }
+
+  .swiper-slide {
+    width: 570px !important;
+    box-shadow: 0 16px 51px 0 rgba(0, 0, 0, 0.11);
+    opacity: .5;
+    transition: .3s;
+  }
+
+  .swiper-slide-active,
+  .swiper-slide-prev {
+    opacity: 1;
+    margin-top: 30px;
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+}
+
+.slider_reviews {
+  margin-top: 30px;
+}
+
+.reviews__card-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__card {
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  padding: 40px 45px;
+}

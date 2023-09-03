@@ -1,0 +1,123 @@
+.services__content {
+  background: url("/images/pages/main/services/bg.webp") center 95% / 100% no-repeat;
+  padding-bottom: 260px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #fff, transparent);
+    width: 100%;
+    height: 10%;
+  }
+}
+
+.services__content .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__cards {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 55px;
+}
+
+.services__card {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.07);
+  max-width: 370px;
+  width: 100%;
+  text-decoration: none;
+  height: 475px;
+}
+
+.services__card:nth-child(1),
+.services__card:nth-child(3),
+.services__card:nth-child(5),
+{
+  height: 400px;
+}
+
+.services__card:nth-child(4),
+.services__card:nth-child(6) {
+  margin-top: -60px;
+}
+
+.services__card:nth-child(5) {
+  height: 415px;
+}
+
+.services__card-img img {
+  border-radius: 5px;
+}
+
+.services__card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 25px 45px 25px;
+  transform: translateY(-25px);
+}
+
+.services__card-title {
+  margin-top: 35px;
+  color: #363434;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.services__card-desc {
+  color: #7E7E7E;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background: var(--green);
+    margin-bottom: 25px;
+  }
+}
+
+.services__btn {
+  width: 270px;
+  margin-top: 50px;
+}
+
+.services__content-cloud {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  z-index: 4;
+}
+
+.services__content-horse_left {
+  position: absolute;
+  bottom: 0;
+  left: 7%;
+  z-index: 3;
+}
+
+.services__content-horse_right {
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+  z-index: 3;
+}

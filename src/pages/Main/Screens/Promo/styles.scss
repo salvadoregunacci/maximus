@@ -3,6 +3,17 @@
   height: 100vh;
   position: relative;
   background: #fff;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    z-index: 8;
+  }
 }
 
 .promo__bg {
@@ -57,6 +68,7 @@
   z-index: 7;
   left: 0;
   bottom: 9%;
+  height: 200px;
 }
 
 .promo__bush_left {
